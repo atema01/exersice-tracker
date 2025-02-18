@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:sans-serif;
+    color:white;
+    background:linear-gradient(  rgb(62, 62, 62), rgb(190, 190, 190));
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin-left:20px;
+}
+nav{
+    width:250px;
+    display: flex;
+    justify-content: space-around;
+   margin-right: 20px;
+ 
+}
+nav a{
+    margin:auto 5px;
+    text-decoration:none;
+    color:white;
+}
+nav a:hover{
+    margin:auto 5px;
+    text-decoration:none;
+    color:white;
+    text-decoration: underline;
+}
+.hero{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    height: 100vh;
+}
+.hero img{
+    width:500px;
+
+}
+.start-now-btn{
+    width:150px;
+    height:50px;
+    background:white;
+    border:0;
+    outline:0;
+    border-radius:30px;
+    cursor: pointer;
+    font-size:15px;
+    margin-top:60px;
+}
+.start-now-btn:hover{
+    opacity:0.7;
+
+}
+
+.muscle img{
+    width:300px;
+    margin-top:-80px;   
+}
+.muscle-part{
+    position: relative;
+}
+/* .shoulder.right{
+    width:100px;
+    height: 30px;
+    background: rgba(0, 119, 255, 0.288);
+    position:absolute;
+    top:0;
+    left:103px;
+    clip-path: polygon(3% 100%,28% 90%,28% 28%,10% 72%);
+
+    } */
+    .shoulder.left{
+        width:100px;
+    height: 30px;
+    background: rgba(0, 119, 255, 0.288);
+    position:absolute;
+    top:0;
+    left:103px;
+    clip-path:polygon(65% 0%, 80% 22%, 90% 40%, 96% 60%,98% 81%,60% 85%,50% 85%,40% 85%,30% 85%,20% 85%, 10% 100%, 0% 100%,10% 90%)
+
+    }
+    .shoulder:hover{
+        background: rgba(255, 0, 0, 0.397);
+    }
