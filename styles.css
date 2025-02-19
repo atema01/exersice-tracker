@@ -69,26 +69,24 @@ nav a:hover{
 .muscle-part{
     position: relative;
 }
-/* .shoulder.right{
+    .shoulder{
     width:100px;
     height: 30px;
-    background: rgba(0, 119, 255, 0.288);
     position:absolute;
     top:0;
     left:103px;
-    clip-path: polygon(3% 100%,28% 90%,28% 28%,10% 72%);
-
-    } */
-    .shoulder.left{
-        width:100px;
-    height: 30px;
-    background: rgba(0, 119, 255, 0.288);
-    position:absolute;
-    top:0;
-    left:103px;
-    clip-path:polygon(65% 0%, 80% 22%, 90% 40%, 96% 60%,98% 81%,60% 85%,50% 85%,40% 85%,30% 85%,20% 85%, 10% 100%, 0% 100%,10% 90%)
-
+    clip-path:polygon(/*tl*/26.2% 33%,/*tr*/ 67% 0%,72% 12%,80% 24%,90% 39%,96% 58%,/*br*/98.5% 81%,/*bl*/4% 95%, 7.5% 80%,9%  75% )
     }
-    .shoulder:hover{
-        background: rgba(255, 0, 0, 0.397);
+   
+    .chest{
+        height:55px;
+        width:95px;
+        /* border:1px solid black; */
+        position:absolute;
+        top:26px;
+        left:90px;
+        clip-path: polygon(/*tl*/3% 50%,12% 28%,27% 4%,/*tr*/89% 0%,86% 8%,88% 20%,92% 35%,98% 60%,/*br*/100% 68%,96% 77%,90% 87%,85% 92%,80% 95%,70% 95%,55% 90%,45% 82%,44% 70%,40% 78%,33% 88%,23% 97%,15% 99%,/*bl*/12% 100%,6.7% 90%,5% 80%,2% 60%);
+    }
+    .shoulder:hover,.chest:hover{
+        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(224, 152, 152, 0),rgba(0, 255, 55, 0.484));
     }
