@@ -12,15 +12,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 header h1{
     margin-left:20px;
+    position:fixed;
+    top:20px
 }
 nav{
     width:250px;
     display: flex;
     justify-content: space-around;
    margin-right: 20px;
+   position:fixed;
+   top:31px;
+   left:70%
  
 }
 nav a{
@@ -40,7 +46,8 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     margin-top:30px;
-    height: 100vh;
+    height: 84vh;
+    color:rgb(69, 68, 139);  
 }
 .hero img{
     width:500px;
@@ -49,7 +56,7 @@ nav a:hover{
 .start-now-btn{
     width:150px;
     height:50px;
-    background:white;
+    background:orange;
     border:0;
     outline:0;
     border-radius:30px;
@@ -62,22 +69,38 @@ nav a:hover{
 
 }
 
-.muscle img{
+.muscle-part img{
     width:300px;
-    margin-top:-80px;   
+    margin-top:-80px;  
+     
 }
 .muscle-part{
     position: relative;
 }
-    .shoulder{
+    .trapsL{
     width:100px;
     height: 30px;
     position:absolute;
-    top:0;
+    top:-5px;
     left:103px;
-    clip-path:polygon(/*tl*/26.2% 33%,/*tr*/ 67% 0%,72% 12%,80% 24%,90% 39%,96% 58%,/*br*/98.5% 81%,/*bl*/4% 95%, 7.5% 80%,9%  75% )
+    clip-path:polygon(/*tl*/63% 0%,
+                      /*tr*/ 66% 12%,70% 24%,80% 42%,90% 56%,95.5% 75%,97% 85%,
+                      /*br*/99% 97%,
+                      /*bl*/60% 100%, 60% 80%,60%  75% )
     }
-   
+    .trapsR{
+     width:23px;
+     height:20.7px;
+     position:absolute;
+     top:9px;
+     left:107px;
+     clip-path:polygon(
+        /* tl */100% 0%,
+        /* tr */100% 0%,
+        /* br */100% 90%,50% 93%,
+        /* bl */0% 100%,10% 80%,40% 50%,65% 30% 
+     )
+    }
     .chest{
         height:55px;
         width:95px;
@@ -85,8 +108,56 @@ nav a:hover{
         position:absolute;
         top:26px;
         left:90px;
-        clip-path: polygon(/*tl*/3% 50%,12% 28%,27% 4%,/*tr*/89% 0%,86% 8%,88% 20%,92% 35%,98% 60%,/*br*/100% 68%,96% 77%,90% 87%,85% 92%,80% 95%,70% 95%,55% 90%,45% 82%,44% 70%,40% 78%,33% 88%,23% 97%,15% 99%,/*bl*/12% 100%,6.7% 90%,5% 80%,2% 60%);
+        clip-path: polygon(/*tl*/3% 50%,12% 28%,27% 4%,
+        /*tr*/89% 0%,86% 8%,88% 20%,92% 35%,98% 60%,
+        /*br*/100% 68%,96% 77%,90% 87%,85% 92%,80% 95%,70% 95%,55% 90%,45% 82%,44% 70%,40% 78%,33% 88%,23% 97%,15% 99%,/*bl*/12% 100%,6.7% 90%,5% 80%,2% 60%);
     }
-    .shoulder:hover,.chest:hover{
-        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(224, 152, 152, 0),rgba(0, 255, 55, 0.484));
+    .shoulderR{
+        width:60px;
+        height: 55px;
+        position:absolute;
+        /* background-color:rgba(255,0,0,0.3); */
+        top:20px;
+        left:170px;
+        clip-path:polygon(  /* tl */10% 10%,65% 6%,
+                            /* tr */80% 12%,85% 17%,91% 25%,96% 38%,
+                            /* br */98% 51%,69% 95%,
+                            /* bl */25% 80%,2% 20%
+        )               
+    }
+    .shoulderL{
+        width:40px;
+        height: 55px;
+        position:absolute;
+        top:20px;
+        left:80px;
+        clip-path:polygon(  /* tl */30% 25.5%,50% 19.7%,70% 16.5%,
+                            /* tr */90% 17%,90% 22%,70% 30%,52% 40%,34% 60%,30% 70%,32% 80%,
+                            /* br */37% 92%,
+                            /* bl */10% 94%,6% 84%,3% 74%,2% 64%,2.8% 54%,7% 44%,10% 39%,18% 32%
+        )               
+    }
+    .abs{
+        width:100px;
+        height:90px;
+        position:absolute;
+        top:63px;
+        left:100px;
+        clip-path:polygon(
+            /* tl */5% 21%,10% 19%,20% 14%,30% 6%,33% 3%,35% 9.5%,38% 13%,42% 14%,52% 17%,58% 17.4%,65% 17%,72% 15%,78% 11%,85% 0%,
+            /* tr */88% 3%,88.7% 19%,90.3% 28%,93.5% 38%,97% 45%,87.2% 76.8%,
+            /* br */87.2% 81%,77% 87%, 60% 93%,50% 96%,40% 99%,30% 100%,20% 100%,15% 97%,
+            /* bl */12% 93%,12% 90%,10.2% 85%,9.5% 81%,9% 76%,9.2% 70%,10% 65%,10.5% 60%,11.5% 51%,7.8% 45%,6.3% 40%
+        );
+
+    }
+    .traps:hover .trapsL,.chest:hover,.shoulder:hover .shoulderL,.shoulder:hover .shoulderR{
+        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
+    }
+    .traps:hover .trapsR{
+        background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
+    }
+    .abs:hover{
+        background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
+
     }
