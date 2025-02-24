@@ -151,6 +151,21 @@ nav a:hover{
         );
 
     }
+    .biTriR{
+        width:50px;
+        height: 60px;
+        background: rgba(0, 128, 0, 0.53);
+        position:absolute;
+        top:60px;
+        left:70px;
+        clip-path:polygon(
+
+            /* tl */28.9% 19.2%,49.8% 18%,
+            /* tr */53% 25%,65% 35%,70% 37%,72.8% 66%,76.5% 76%,70% 86%,65% 90%,60% 94%,
+            /* br */60% 96%,50% 99%,45% 98%,
+            /* bl */20% 64%
+        )
+    }
     .traps:hover .trapsL,.chest:hover,.shoulder:hover .shoulderL,.shoulder:hover .shoulderR{
         background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
     }
@@ -159,5 +174,4 @@ nav a:hover{
     }
     .abs:hover{
         background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
-
     }
