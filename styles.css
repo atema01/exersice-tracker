@@ -154,17 +154,44 @@ nav a:hover{
     .biTriR{
         width:50px;
         height: 60px;
-        background: rgba(0, 128, 0, 0.53);
         position:absolute;
         top:60px;
         left:70px;
         clip-path:polygon(
-
             /* tl */28.9% 19.2%,49.8% 18%,
             /* tr */53% 25%,65% 35%,70% 37%,72.8% 66%,76.5% 76%,70% 86%,65% 90%,60% 94%,
             /* br */60% 96%,50% 99%,45% 98%,
-            /* bl */20% 64%
+            /* bl */20% 64%,12% 58%,14.3% 44%,17% 34%,26% 22%
         )
+    }
+    .biTriL{
+        width:60px;
+        height: 67px;
+        /* background: rgba(0, 255, 0, 0.201); */
+        position:absolute;
+        top:45px;
+        left:187px;
+        clip-path:polygon(
+            /* tl */1% 30%,45% 40%,
+            /* tr */70% 5%,74% 10%,85% 20%,91.7% 30%,94% 40%,92.7% 50%,92% 60%,93% 70%,
+            /* br */98% 100%,80% 100%,80% 90%,77% 80%,72% 70%,70% 67%,65% 65%,55% 64%,44% 67%,35% 78%,40% 90%,
+            /* bl */35% 100%,27% 95%,15% 85%,11% 78%,7% 68%,3% 58%,2% 48%,0% 35%
+        )   
+    }
+    .foreArmL{
+    width:36px;
+    height: 78px;
+    position:absolute;
+    top:94px;
+    left:64px;
+    clip-path:polygon(
+        /* tl */33% 0%,40% 3.5%,50% 10%,60% 17%,75% 27.6%,80% 32%,90% 32%,
+        /* tr */100% 30%,100% 40%,97.5% 50%,96% 62%,75% 80%,
+        /* br */47% 100%,
+        /* bl */3% 100%,8% 90%,6% 80%,2% 60%,3% 44%,4% 35%,4% 25%, 12.5% 15%,24.5% 8%
+
+    )
+
     }
     .traps:hover .trapsL,.chest:hover,.shoulder:hover .shoulderL,.shoulder:hover .shoulderR{
         background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
@@ -174,4 +201,11 @@ nav a:hover{
     }
     .abs:hover{
         background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
+    }
+    .biTri:hover .biTriR,.biTri:hover .biTriL{
+        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
+    }
+    .foreArm:hover .foreArmL{
+                background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(64, 255, 0, 0.146),rgba(0, 255, 55, 0.384));
+
     }
