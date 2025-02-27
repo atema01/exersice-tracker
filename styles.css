@@ -191,6 +191,48 @@ nav a:hover{
         /* bl */3% 100%,8% 90%,6% 80%,2% 60%,3% 44%,4% 35%,4% 25%, 12.5% 15%,24.5% 8%
 
     )
+   
+    }
+    .foreArmR{
+        width:50px;
+        height:87px;
+        position:absolute;
+        top:88px;
+        left:195px;
+        clip-path:polygon(
+            /* tl */50% 0%,60% 0.5%,68% 2%,74.7% 10%,77.9% 15%,80% 20%,80% 26%,100% 26%,
+            /* tr */98% 30%,94.7% 35%,90% 48%,87.5% 53%, 83% 63%,75% 73%,67.6% 80%,58% 86%,47% 92%,
+            /* br */39% 100%,
+            /* bl */1% 90%,11% 80%,18% 66%,15% 50%,18% 40%,32% 19%,25% 9%
+
+        )
+    }
+    .upperLegL{
+        width:67px;
+        height:80px;
+        position:absolute;
+        top:220px;
+        left:85px;
+        clip-path:polygon(
+            /* tl */5% 0%,45% 8%,80% 10%,95% 11%,
+            /* tr */100% 22%,92% 40%,83.5% 60%,
+            /* br */74% 95%,
+            /* bl */33% 100%,29% 90%,26% 80%,24% 75%,23.5% 65%,23.7% 55%,17.4% 50%,11.5% 42%,8.2% 32%,6% 22%
+        )
+    }
+    .upperLegR{
+        width:65px;
+        height: 90px;
+        position:absolute;
+        top:220px;
+        left:149px;
+        background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
+        clip-path:polygon(
+            /* tl */1.7% 14%,15% 10%,30% 7.5%,45% 6%,65% 4%,80% 3.7%,
+            /* tr */85% 4%,84.2% 24%,81% 45%,84% 60%,
+            /* br */90% 90%,
+            /* bl */50% 100%
+        )
 
     }
     .traps:hover .trapsL,.chest:hover,.shoulder:hover .shoulderL,.shoulder:hover .shoulderR{
@@ -200,12 +242,16 @@ nav a:hover{
         background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
     }
     .abs:hover{
-        background: linear-gradient(to right,rgba(0, 255, 0, 0.201),rgba(208, 238, 148, 0.21));
+        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(47, 255, 0, 0.084),rgba(0, 255, 55, 0.384));
     }
     .biTri:hover .biTriR,.biTri:hover .biTriL{
         background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
     }
-    .foreArm:hover .foreArmL{
-                background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(64, 255, 0, 0.146),rgba(0, 255, 55, 0.384));
+    .foreArm:hover .foreArmL,.foreArm:hover .foreArmR{
+        background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
+
+    }
+    .upperLeg:hover .upperLegL{
+        background: linear-gradient(70deg,rgba(17, 255, 0, 0.315),rgba(47, 255, 0, 0),rgba(0, 255, 55, 0.384));
 
     }
