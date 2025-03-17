@@ -63,6 +63,7 @@ nav a:hover{
     cursor: pointer;
     font-size:15px;
     margin-top:60px;
+    
 }
 .start-now-btn:hover{
     opacity:0.7;
@@ -260,6 +261,18 @@ nav a:hover{
             /* bl */42.4% 100%,44% 95%,44.8% 90%,44.8% 85%,40.7% 75%,37.3% 70%,33.5% 63.5%,25% 57%,18% 50%,15.5% 45%,14% 40%,13.6% 35%,13.3% 30%,12.6% 25%,11.2% 18%,6% 13% 
         )
     }
+    .circle{
+        width:200px;
+        height: 200px;
+        background-color: grey;
+        clip-path:circle(40% at 50% 50%)
+
+    }
+  
+
+    
+
+      
     .traps:hover .trapsL,.chest:hover,.shoulder:hover .shoulderL,.shoulder:hover .shoulderR{
         background: linear-gradient(to right,rgba(17, 255, 0, 0.315),rgba(255, 255, 255, 0),rgba(0, 255, 55, 0.384));
     }
